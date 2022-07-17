@@ -6,7 +6,7 @@ class RadioScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.yellow,
+      color: Colors.grey,
     );
   }
 }
