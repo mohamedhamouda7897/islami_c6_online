@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_c6_online/tabs/ahadeth.dart';
 import 'package:islami_c6_online/tabs/quran/quran.dart';
 import 'package:islami_c6_online/tabs/radio.dart';
-import 'package:islami_c6_online/tabs/sebha.dart';
+import 'package:islami_c6_online/tabs/sebha/sebha_screen.dart';
 
 class HomeLayout extends StatefulWidget {
   static const String routeName = 'home';

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class MyThemeData {
   static Color primaryColor = Color(0xFFB7935F);
   static Color BlackColor = Color(0xFF242424);
+  static Color whigthColor = Color(0xFFFFFFFF);
+
   static final ThemeData lightTheme = ThemeData(
       primaryColor: primaryColor,
       appBarTheme: AppBarTheme(
@@ -19,6 +21,11 @@ class MyThemeData {
         headline2: TextStyle(
           fontSize: 25,
           color: BlackColor,
+          fontWeight: FontWeight.w400,
+        ),
+        headline3: TextStyle(
+          fontSize: 25,
+          color: whigthColor,
           fontWeight: FontWeight.w400,
         ),
       ),
