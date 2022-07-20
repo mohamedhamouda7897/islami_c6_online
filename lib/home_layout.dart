@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c6_online/tabs/hadeth/ahadeth.dart';
 import 'package:islami_c6_online/tabs/quran/quran.dart';
 import 'package:islami_c6_online/tabs/radio.dart';
@@ -28,7 +29,7 @@ class _HomeLayoutState extends State<HomeLayout> {
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             title: Text(
-              'Islami',
+              AppLocalizations.of(context)!.islamiTitle,
               style: Theme.of(context).textTheme.headline1,
             ),
           ),
