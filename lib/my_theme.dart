@@ -21,6 +21,11 @@ class MyThemeData {
           color: BlackColor,
           fontWeight: FontWeight.w400,
         ),
+        subtitle1: TextStyle(
+          fontSize: 25,
+          color: BlackColor,
+          fontWeight: FontWeight.w500,
+        ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           selectedItemColor: BlackColor, unselectedItemColor: Colors.white));
