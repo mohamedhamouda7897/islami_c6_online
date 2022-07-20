@@ -32,17 +32,19 @@ class _AhadethScreenState extends State<AhadethScreen> {
           color: Theme.of(context).primaryColor,
           thickness: 3,
         ),
-        Expanded(
-          child: ListView.separated(
-              itemBuilder: (_, index) {
-                return HadethItem(Allahadeth[index]);
-              },
-              separatorBuilder: (_, index) {
-                return Container(
-                  height: 1,
-                  margin: EdgeInsets.symmetric(horizontal: 50),
-                  color: MyThemeData.primaryColor,
-                );
+        Allahadeth.length == 0
+            ? Center(child: CircularProgressIndicator())
+            : Expanded(
+                child: ListView.separated(
+                    itemBuilder: (_, index) {
+                      return HadethItem(Allahadeth[index]);
+                    },
+                    separatorBuilder: (_, index) {
+                      return Container(
+                        height: 1,
+                        margin: EdgeInsets.symmetric(horizontal: 50),
+                        color: MyThemeData.primaryColor,
+                      );
               },
               itemCount: Allahadeth.length),
         )

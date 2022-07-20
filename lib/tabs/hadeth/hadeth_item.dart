@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c6_online/tabs/hadeth/ahadeth.dart';
+import 'package:islami_c6_online/tabs/hadeth/hadeth_datils.dart';
 
 class HadethItem extends StatelessWidget {
   AhadethModel ahadethModel;
@@ -10,8 +11,8 @@ class HadethItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        // Navigator.pushNamed(context, SuraDetailsScreen.routeName,
-        //     arguments: SuraDetailsModel(name, index));
+        Navigator.pushNamed(context, HadethDetails.routeName,
+            arguments: ahadethModel);
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),
