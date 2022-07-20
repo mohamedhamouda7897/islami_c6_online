@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:islami_c6_online/home_layout.dart';
 import 'package:islami_c6_online/my_theme.dart';
 import 'package:islami_c6_online/sura_details/sura_details_screen.dart';
@@ -14,15 +13,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale('en'),
-        Locale('ar'),
-      ],
       initialRoute: HomeLayout.routeName,
       routes: {
         HomeLayout.routeName: (c) => HomeLayout(),
