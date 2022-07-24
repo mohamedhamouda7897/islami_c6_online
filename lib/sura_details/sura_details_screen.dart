@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islami_c6_online/providers/my_provider.dart';
 import 'package:islami_c6_online/sura_details/sura_details_item.dart';
+import 'package:provider/provider.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
   static const String routeName = 'sura-details';
@@ -14,6 +16,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var pro=Provider.of<MyProviderApp>(context);
     var SuraDetailsArgs =
         ModalRoute.of(context)!.settings.arguments as SuraDetailsModel;
     if (verses.isEmpty) {
@@ -22,7 +25,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
     return Stack(
       children: [
         Image.asset(
-          'assets/images/main_bg.png',
+         pro.getBackground() ,
           width: double.infinity,
           height: double.infinity,
           fit: BoxFit.fill,
