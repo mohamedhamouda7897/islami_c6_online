@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c6_online/tabs/hadeth/ahadeth.dart';
+import 'package:provider/provider.dart';
+
+import '../../providers/my_provider.dart';
 
 class HadethDetails extends StatelessWidget {
   static const String routeName = 'ahdeth';
 
   @override
   Widget build(BuildContext context) {
+    var pro=Provider.of<MyProviderApp>(context);
     AhadethModel model =
         ModalRoute.of(context)!.settings.arguments as AhadethModel;
     return Stack(
       children: [
         Image.asset(
-          'assets/images/main_bg.png',
+          pro.getBackground(),
           width: double.infinity,
           height: double.infinity,
           fit: BoxFit.fill,
