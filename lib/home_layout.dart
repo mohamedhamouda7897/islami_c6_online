@@ -74,7 +74,7 @@ class _HomeLayoutState extends State<HomeLayout> {
 
   List<Widget> tabs = [
     QuranScreen(),
-    SebhaScreen(),
+    sebhascreen(),
     RadioScreen(),
     AhadethScreen(),
     SettingsScreen()
