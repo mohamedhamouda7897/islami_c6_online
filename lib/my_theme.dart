@@ -5,8 +5,10 @@ class MyThemeData {
   static Color OnprimaryColor = Color(0xFF79643D);
   static Color primaryColorDark = Color(0xFF12182A);
   static Color BlackColor = Color(0xFF242424);
+
   static Color WhiteColor = Color(0xFFFFFFFF);
   static Color YellowColor = Color(0xFFFACC1D);
+
   static final ThemeData lightTheme = ThemeData(
       primaryColor: primaryColor,
       appBarTheme: AppBarTheme(
@@ -25,6 +27,11 @@ class MyThemeData {
           color: BlackColor,
           fontWeight: FontWeight.w400,
         ),
+        headline3: TextStyle(
+          fontSize: 25,
+          color: WhiteColor,
+          fontWeight: FontWeight.w400,
+
         subtitle1: TextStyle(
           fontSize: 25,
           color: BlackColor,

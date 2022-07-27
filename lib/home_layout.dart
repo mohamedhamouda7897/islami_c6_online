@@ -3,10 +3,14 @@ import 'package:islami_c6_online/providers/my_provider.dart';
 import 'package:islami_c6_online/tabs/hadeth/ahadeth.dart';
 import 'package:islami_c6_online/tabs/quran/quran.dart';
 import 'package:islami_c6_online/tabs/radio.dart';
+
+import 'package:islami_c6_online/tabs/sebha/sebha_screen.dart';
+
 import 'package:islami_c6_online/tabs/sebha.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c6_online/tabs/setting/settings.dart';
 import 'package:provider/provider.dart';
+
 
 class HomeLayout extends StatefulWidget {
   static const String routeName = 'home';
