@@ -5,12 +5,26 @@ class MyThemeData {
   static Color OnprimaryColor = Color(0xFF79643D);
   static Color primaryColorDark = Color(0xFF12182A);
   static Color BlackColor = Color(0xFF242424);
-
+  static Color selected=Colors.red;
+  static Color unselected=Colors.black;
   static Color WhiteColor = Color(0xFFFFFFFF);
   static Color YellowColor = Color(0xFFFACC1D);
 
   static final ThemeData lightTheme = ThemeData(
       primaryColor: primaryColor,
+      colorScheme: ColorScheme(
+          primary: primaryColor,
+        onPrimary: BlackColor,
+        secondary: OnprimaryColor,
+        onSecondary: Colors.white,
+          brightness: Brightness.light,
+          onBackground: Colors.transparent,
+          onSurface: BlackColor,
+          surface: Colors.white,
+          onError: Colors.white,
+          error: Colors.red,
+          background: Colors.transparent,
+      ),
       appBarTheme: AppBarTheme(
         centerTitle: true,
           color: Colors.transparent,
@@ -46,7 +60,8 @@ class MyThemeData {
           selectedItemColor: BlackColor, unselectedItemColor: Colors.white
       ),
       );
-
+////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////
   static final ThemeData darkTheme = ThemeData(
       primaryColor: primaryColorDark,
       appBarTheme: AppBarTheme(

@@ -28,13 +28,23 @@ class HadethDetails extends StatelessWidget {
               style: Theme.of(context).textTheme.headline1,
             ),
           ),
-          body: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                '${model.content}',
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.subtitle1,
+          body: Center(
+            child: Container(
+              height: 550,
+              width: 300, 
+              decoration: BoxDecoration(
+                color: pro.themeMode==ThemeMode.light? Colors.white:Colors.white10,
+                borderRadius: BorderRadius.circular(25)
+              ),
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Text(
+                    '${model.content}',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+                ),
               ),
             ),
           ),
