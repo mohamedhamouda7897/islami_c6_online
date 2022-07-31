@@ -6,7 +6,7 @@ import 'package:islami_c6_online/tabs/radio.dart';
 
 import 'package:islami_c6_online/tabs/sebha/sebha_screen.dart';
 
-import 'package:islami_c6_online/tabs/sebha.dart';
+// import 'package:islami_c6_online/tabs/sebha.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c6_online/tabs/setting/settings.dart';
 import 'package:provider/provider.dart';
@@ -36,8 +36,7 @@ class _HomeLayoutState extends State<HomeLayout> {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text(
-              '${AppLocalizations.of(context)!.islamiTitle}',
+            title:Text(AppLocalizations.of(context)!.islamiTitle,
               style: Theme.of(context).textTheme.headline1,
             ),
           ),
@@ -83,4 +82,10 @@ class _HomeLayoutState extends State<HomeLayout> {
     AhadethScreen(),
     SettingsScreen()
   ];
-}
+
+
+
+  }
+
+
+

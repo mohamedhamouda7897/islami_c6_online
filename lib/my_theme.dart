@@ -30,8 +30,7 @@ class MyThemeData {
         headline3: TextStyle(
           fontSize: 25,
           color: WhiteColor,
-          fontWeight: FontWeight.w400,
-
+          fontWeight: FontWeight.w400,),
         subtitle1: TextStyle(
           fontSize: 25,
           color: BlackColor,
@@ -44,7 +43,9 @@ class MyThemeData {
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: BlackColor, unselectedItemColor: Colors.white));
+          selectedItemColor: BlackColor, unselectedItemColor: Colors.white
+      ),
+      );
 
   static final ThemeData darkTheme = ThemeData(
       primaryColor: primaryColorDark,
