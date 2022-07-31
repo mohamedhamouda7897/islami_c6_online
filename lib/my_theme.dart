@@ -11,6 +11,19 @@ class MyThemeData {
 
   static final ThemeData lightTheme = ThemeData(
       primaryColor: primaryColor,
+      colorScheme: ColorScheme(
+          primary: primaryColor,
+        onPrimary: BlackColor,
+        secondary: OnprimaryColor,
+        onSecondary: Colors.white,
+          brightness: Brightness.light,
+          onBackground: Colors.transparent,
+          onSurface: BlackColor,
+          surface: Colors.white,
+          onError: Colors.white,
+          error: Colors.red,
+          background: Colors.transparent,
+      ),
       appBarTheme: AppBarTheme(
         centerTitle: true,
           color: Colors.transparent,
