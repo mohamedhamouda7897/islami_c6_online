@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_c6_online/my_theme.dart';
 import 'package:islami_c6_online/providers/my_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -42,7 +43,7 @@ class _ShowLanguageBottomSheetState extends State<ShowLanguageBottomSheet> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text('$text',style: Theme.of(context).textTheme.bodyText1!.copyWith(
-              color: Theme.of(context).primaryColor
+              color: MyThemeData.selected
           ),),
           Icon(Icons.check,color: Theme.of(context).primaryColor,),
         ],
@@ -52,7 +53,9 @@ class _ShowLanguageBottomSheetState extends State<ShowLanguageBottomSheet> {
      return  Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('$text',style: Theme.of(context).textTheme.bodyText1),
+          Text('$text',style: Theme.of(context).textTheme.bodyText1?.copyWith(
+            color: MyThemeData.unselected
+          )),
           Icon(Icons.check),
         ],
       );

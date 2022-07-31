@@ -35,7 +35,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 color: Colors.white,
                 border: Border.all(color: Theme.of(context).primaryColor)
               ),
-                child: Text(proiver.AppLanguage=='en'?'English':"العربية",style: Theme.of(context).textTheme.headline2,)),
+                child: Text(proiver.AppLanguage=='en'?'English':"العربية",style: Theme.of(context).textTheme.headline2?.copyWith(
+                  color: Colors.black
+                ),)),
           ),
           SizedBox(
             height: 15,
@@ -55,7 +57,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     color: Colors.white,
                     border: Border.all(color: Theme.of(context).primaryColor)
                 ),
-                child: Text(proiver.themeMode==ThemeMode.light?"Light":"Dark",style: Theme.of(context).textTheme.headline2,)),
+                child: Text(proiver.themeMode==ThemeMode.light?"Light":"Dark",style: Theme.of(context).textTheme.headline2?.copyWith(
+                  color: Colors.black
+                ),)),
           ),
           SizedBox(
             height: 15,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_c6_online/my_theme.dart';
 import 'package:islami_c6_online/providers/my_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -42,9 +43,9 @@ class _ShowThemeBottomSheetState extends State<ShowThemeBottomSheet> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text('$text',style: Theme.of(context).textTheme.bodyText1!.copyWith(
-              color: Theme.of(context).primaryColorDark
+              color: MyThemeData.selected
           ),),
-          Icon(Icons.check,color: Theme.of(context).primaryColor,),
+          Icon(Icons.check,color: MyThemeData.selected,),
         ],
       );
     }else{
@@ -52,8 +53,10 @@ class _ShowThemeBottomSheetState extends State<ShowThemeBottomSheet> {
      return  Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('$text',style: Theme.of(context).textTheme.bodyText1),
-          Icon(Icons.check),
+          Text('$text',style: Theme.of(context).textTheme.bodyText1?.copyWith(
+            color: MyThemeData.unselected
+          )),
+          Icon(Icons.check,color: MyThemeData.unselected,),
         ],
       );
     }

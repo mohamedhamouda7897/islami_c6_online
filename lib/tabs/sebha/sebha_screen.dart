@@ -71,7 +71,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
               color: Theme.of(context).primaryColor,
               borderRadius: BorderRadius.circular(25)),
           child:
-              Text('$nameSebha', style: Theme.of(context).textTheme.headline3),
+              Text('$nameSebha', style: Theme.of(context).textTheme.headline2),
         ),
       ],
     );

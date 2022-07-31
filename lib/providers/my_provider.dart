@@ -19,7 +19,7 @@ class MyProviderApp extends ChangeNotifier{
     if(themeMode==ThemeMode.light){
       return 'assets/images/main_bg.png';
     }else{
-      return 'assets/images/main_dark_bg.png';
+      return 'assets/images/bg.png';
     }
 
   }
