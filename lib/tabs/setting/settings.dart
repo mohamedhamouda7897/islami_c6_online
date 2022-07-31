@@ -20,7 +20,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Language',style: Theme.of(context).textTheme.headline1,),
+          Text(proiver.AppLanguage=='en'?"Language":"اللغة",style: Theme.of(context).textTheme.headline1,),
           SizedBox(
             height: 15,
           ),
@@ -40,7 +40,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           SizedBox(
             height: 15,
           ),
-          Text('Theme',style: Theme.of(context).textTheme.headline1,),
+          Text(proiver.AppLanguage=='en'?"Theme":"الثيم",style: Theme.of(context).textTheme.headline1,),
           SizedBox(
             height: 15,
           ),

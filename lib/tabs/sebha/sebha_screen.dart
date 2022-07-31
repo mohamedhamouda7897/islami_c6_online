@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:islami_c6_online/providers/my_provider.dart';
+import 'package:provider/provider.dart';
 
 class SebhaScreen extends StatefulWidget {
   @override
@@ -12,6 +14,8 @@ class _SebhaScreenState extends State<SebhaScreen> {
    String nameSebha = 'سبحان الله';
   @override
   Widget build(BuildContext context) {
+
+    var pro = Provider.of<MyProviderApp>(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -40,8 +44,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
         SizedBox(
           height: 20,
         ),
-        Text(
-          'عدد التسبيحات',
+        Text( pro.AppLanguage=='en'?"Number Of Tsbeh":"عدد التسبيحات" ,
           style: Theme.of(context).textTheme.headline2,
         ),
         SizedBox(
