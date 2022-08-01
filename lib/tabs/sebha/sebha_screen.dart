@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c6_online/providers/my_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class SebhaScreen extends StatefulWidget {
   @override
@@ -44,7 +46,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
         SizedBox(
           height: 20,
         ),
-        Text( pro.AppLanguage=='en'?"Number Of Tsbeh":"عدد التسبيحات" ,
+        Text(AppLocalizations.of(context)!.sebha_counter ,
           style: Theme.of(context).textTheme.headline2,
         ),
         SizedBox(

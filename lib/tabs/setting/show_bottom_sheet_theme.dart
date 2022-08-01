@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c6_online/providers/my_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class ShowThemeBottomSheet extends StatefulWidget {
   const ShowThemeBottomSheet({Key? key}) : super(key: key);
@@ -23,14 +25,14 @@ class _ShowThemeBottomSheetState extends State<ShowThemeBottomSheet> {
            pro.changeTheme(ThemeMode.light);
            Navigator.pop(context);
               },
-              child: showThemeSelected('Light',pro.themeMode==ThemeMode.light?true:false)),
+              child: showThemeSelected(AppLocalizations.of(context)!.light,pro.themeMode==ThemeMode.light?true:false)),
           SizedBox(height: 15,),
           InkWell(
               onTap: (){
                 pro.changeTheme(ThemeMode.dark);
                 Navigator.pop(context);
               },
-              child: showThemeSelected('Dark',pro.themeMode==ThemeMode.light?false:true)),
+              child: showThemeSelected(AppLocalizations.of(context)!.dark,pro.themeMode==ThemeMode.light?false:true)),
         ],
       ),
     );
